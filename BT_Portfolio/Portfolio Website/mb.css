@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Playwrite+GB+J+Guides:ital@0;1&family=Tangerine:wght@400;700&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header Styling */
+header {
+    background-color: #fcffe7;
+    color: #2b3467;
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 70px; /* Fixed header height */
+    width: 100%;
+    position: fixed; /* Keep the header fixed at the top */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* Movie Section Styling */
+.movie-section {
+    display: flex; /* Enables side-by-side layout */
+    flex-direction: row; /* Ensures image is on the left and text on the right */
+    align-items: center;
+    justify-content: space-between; /* Adds spacing between image and text */
+    text-align: left; /* Align text to the left */
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.movie-image {
+    width: 40%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Movie Info Box */
+.review-box {
+    width: 60%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: left; /* Align text properly */
+} 
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .movie-section {
+        flex-direction: column; /* Stack image and text on smaller screens */
+        text-align: center;
+    }
+
+    .movie-image, 
+    .review-box {
+        width: 100%;
+    }
+}
